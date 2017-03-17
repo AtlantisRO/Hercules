@@ -60,7 +60,30 @@ item_db: (
 	Job: Job mask                 (alternate synxtax, int, defaults to all jobs = 0xFFFFFFFF)
 	Upper: Upper mask             (int, defaults to any = 0x3f)
 	Gender: Gender                (int, defaults to both = 2)
-	Loc: Equip location           (int, required value for equipment)
+	Loc: {                        (required value for equipment)
+		lower_headgear: true/false         (boolean, defaults to false)
+		middle_headgear: true/false        (boolean, defaults to false)
+		upper_headgear: true/false         (boolean, defaults to false)
+		hand_right: true/false             (boolean, defaults to false)
+		hand_left: true/false              (boolean, defaults to false)
+		armor: true/false                  (boolean, defaults to false)
+		footgear: true/false               (boolean, defaults to false)
+		garment: true/false                (boolean, defaults to false)
+		accessory_left: true/false         (boolean, defaults to false)
+		accessory_right: true/false        (boolean, defaults to false)
+		costume_top_headgear: true/false   (boolean, defaults to false)
+		costume_mid_headgear: true/false   (boolean, defaults to false)
+		costume_low_headgear: true/false   (boolean, defaults to false)
+		costume_garment: true/false        (boolean, defaults to false)
+		shadow_armor: true/false           (boolean, defaults to false)
+		shadow_hand_right: true/false      (boolean, defaults to false)
+		shadow_hand_left: true/false       (boolean, defaults to false)
+		shadow_shoes: true/false           (boolean, defaults to false)
+		shadow_accessory_left: true/false  (boolean, defaults to false)
+		shadow_accessory_right: true/false (boolean, defaults to false)
+		ammo: true/false                 (boolean, defaults to false)
+	}
+	Loc: Loc mask                 (alternate format, int, required value for equipment)
 	WeaponLv: Weapon Level        (int, defaults to 0)
 	EquipLv: Equip required level (int, defaults to 0)
 	EquipLv: [min, max]           (alternative syntax with min / max level)
@@ -202,7 +225,10 @@ Upper: Equippable upper-types. Uses the following bitmasks:
 Gender: Gender restriction. 0 is female, 1 is male, 2 for both (default value).
 
 Loc: Equipment's placement. A value needs to be specified if the item is an
-     equipment piece. Values are:
+     equipment piece. All the settings in this group are boolean values.
+
+	Alternate Format:
+		Equippable locations. Uses the following bitmask table:
 
 	2^0  001 = Lower Headgear
 	2^1  002 = Weapon
