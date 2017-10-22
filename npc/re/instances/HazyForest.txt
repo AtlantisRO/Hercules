@@ -95,7 +95,7 @@ bif_fild01,158,340,5	script	Laphine Soldier#mist	4_M_FAIRYSOLDIER,{
 			mes("Are you going to venture into the Hazy Forest?");
 		}
 		next();
-		switch(select("Venture into the Hazy Forest.", "Give up.")) {
+		switch (select("Venture into the Hazy Forest.", "Give up.")) {
 		case 1:
 			mes("[Laphine Soldier]");
 			mesf("Party Name %s...", getpartyname(.@party_id));
@@ -643,13 +643,13 @@ OnTimer3000:
 		mes("I'm asking you again.");
 		mes("Do you plan to pass through this forest?");
 		next();
-		switch(select("Yes, I do.", "No, I don't.")) {
+		switch (select("Yes, I do.", "No, I don't.")) {
 		case 1:
 			mes("[Loki]");
 			mes("Then I'll ask you a question.");
 			mes("Have you ever seen a guard... a girl with purple hair?");
 			next();
-			switch(select("No, I haven't.", "Yes, I might have...")) {
+			switch (select("No, I haven't.", "Yes, I might have...")) {
 			case 1:
 				mes("[Loki]");
 				mes("So you haven't.");
@@ -685,7 +685,7 @@ OnTimer3000:
 		mes("It's not easy going through the forest.");
 		mes("It may cost you your life.");
 		next();
-		switch(select("Okay.", "What do you want?")) {
+		switch (select("Okay.", "What do you want?")) {
 		case 1:
 			mes("- When you step back,");
 			mes("Loki nods slightly and then looks away. -");
@@ -695,7 +695,7 @@ OnTimer3000:
 			mes("I'm looking for somebody.");
 			mes("Have you ever seen a guard... a girl with purple hair?");
 			next();
-			switch(select("No, I haven't.", "Yes, I might have...")) {
+			switch (select("No, I haven't.", "Yes, I might have...")) {
 			case 1:
 				mes("[Loki]");
 				mes("So you haven't.");
@@ -941,7 +941,7 @@ mora,48,152,3	script	Sharp Eyed Man	4_M_ROKI2,{
 		mes("Now I know. I'll destroy Morroc with my own hands.");
 		mes("I will fulfill my duties as a guardian.");
 		next();
-		switch(select("You're not alone.", "Those are very important duties.")) {
+		switch (select("You're not alone.", "Those are very important duties.")) {
 		case 1:
 			mes("[Nydhogg the Guardian]");
 			mes("You're right.");
@@ -1068,7 +1068,7 @@ bif_fild01,38,374,0	script	Mysterious Flower#ep14_1	CLEAR_NPC,{
 	if (countitem(Mysterious_Seed)) {
 		mes("It's reacting to the Mysterious Flower Seeds you have with you.");
 		next();
-		switch(select("Observe the reaction.", "Stop the reaction.")) {
+		switch (select("Observe the reaction.", "Stop the reaction.")) {
 		case 1:
 			mes("The flower started to shake violently");
 			mes("and swing forward as if trying to send the seeds as far away as possible!!!");
