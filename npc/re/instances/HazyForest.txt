@@ -236,8 +236,8 @@ function	script	F_Mora_Mist	{
 1@mist,247,123,0	script	Tom's Garden Tree	4_CREEPER,{
 	callfunc("F_Mora_Mist",
 		"a25_a18-1",
-		"Roaring Cry: Tom's bolt is broken! Watch out, Tomba! Watch out, Tomba!",
-		"Tom");
+		_("Roaring Cry: Tom's bolt is broken! Watch out, Tomba! Watch out, Tomba!"),
+		_("Tom"));
 	end;
 OnInstanceInit:
 	monster(instance_mapname("1@mist"), 249, 120, _("Tom"), LITTLE_FATUM, 1, instance_npcname("Tom's Garden Tree")+"::OnMyMobDead");
@@ -253,8 +253,8 @@ OnMyMobDead:
 1@mist,225,98,0	script	Tomba's Garden Tree	4_CREEPER,{
 	callfunc("F_Mora_Mist",
 		"a27-2_af1-2",
-		"Roaring Cry: Tomba's Garden Tree is gone with Tomba. Remi, what are you going to do now?",
-		"Tomba");
+		_("Roaring Cry: Tomba's Garden Tree is gone with Tomba. Remi, what are you going to do now?"),
+		_("Tomba"));
 	end;
 OnInstanceInit:
 	monster(instance_mapname("1@mist"), 200, 64, _("Tomba"), LITTLE_FATUM, 1, instance_npcname("Tomba's Garden Tree")+"::OnMyMobDead");
@@ -270,8 +270,8 @@ OnMyMobDead:
 1@mist,159,184,0	script	Remi's Garden Tree	4_CREEPER,{
 	callfunc("F_Mora_Mist",
 		"a15-2_a4-1",
-		"Roaring Cry: Remi, Remi's Garden Tree was chopped down- Rem, it's your turn next. Poor Rem!",
-		"Remi");
+		_("Roaring Cry: Remi, Remi's Garden Tree was chopped down- Rem, it's your turn next. Poor Rem!"),
+		_("Remi"));
 	end;
 OnInstanceInit:
 	monster(instance_mapname("1@mist"), 154, 184, _("Remi the Tired"), MIMING, 1, instance_npcname("Remi's Garden Tree")+"::OnMyMobDead");
@@ -287,8 +287,8 @@ OnMyMobDead:
 1@mist,61,39,0	script	Tired Rem's Garden Tree	4_CREEPER,{
 	callfunc("F_Mora_Mist",
 		"a4-2_a11",
-		"Rem's Desperate Cry: Argh... Rem will sleep. Rem will sleep now, and won't wake up forever!",
-		"Rem");
+		_("Rem's Desperate Cry: Argh... Rem will sleep. Rem will sleep now, and won't wake up forever!"),
+		_("Rem"));
 	end;
 OnInstanceInit:
 	monster(instance_mapname("1@mist"), 101, 107, _("Rem the Gardener"), LITTLE_FATUM, 1, instance_npcname("Tired Rem's Garden Tree")+"::OnMyMobDead");
@@ -314,8 +314,8 @@ OnMyMobDead:
 1@mist,230,179,0	script	Ron's Garden Tree	4_CREEPER,{
 	callfunc("F_Mora_Mist",
 		"b4-2_b2",
-		"Ron the Gardener's Cry: I'm getting off work! Don't look for Ron, the second gardener, any more!!",
-		"Ron");
+		_("Ron the Gardener's Cry: I'm getting off work! Don't look for Ron, the second gardener, any more!!"),
+		_("Ron"));
 	end;
 OnInstanceInit:
 	monster(instance_mapname("1@mist"), 227, 178, _("Ron the Gardener"), PARUS, 1, instance_npcname("Ron's Garden Tree")+"::OnMyMobDead");
@@ -331,8 +331,8 @@ OnMyMobDead:
 1@mist,285,225,0	script	Rover's Garden Tree	4_CREEPER,{
 	callfunc("F_Mora_Mist",
 		"b7_bf1-2",
-		"Roaring Whisper: Ron's, and Rover's trees were chopped down as well. Who is forcing his way into the forest? Who is it?",
-		"Rover");
+		_("Roaring Whisper: Ron's, and Rover's trees were chopped down as well. Who is forcing his way into the forest? Who is it?"),
+		_("Rover"));
 	end;
 OnInstanceInit:
 	monster(instance_mapname("1@mist"), 304, 237, _("Rover the Strutter"), PARUS, 1, instance_npcname("Rover's Garden Tree")+"::OnMyMobDead");
@@ -348,8 +348,8 @@ OnMyMobDead:
 1@mist,161,316,0	script	Mona's Garden Tree	4_CREEPER,{
 	callfunc("F_Mora_Mist",
 		"b31_b16",
-		"Clamoring Whisper: Mona the Seedseeker's garden tree is gone! Mona is gone too! Namon will be okay, because he is brave, right? Namon, are you okay?",
-		"Mona");
+		_("Clamoring Whisper: Mona the Seedseeker's garden tree is gone! Mona is gone too! Namon will be okay, because he is brave, right? Namon, are you okay?"),
+		_("Mona"));
 	end;
 OnInstanceInit:
 	monster(instance_mapname("1@mist"), 239, 253, _("Mona the Seedseeker"), ANGRA_MANTIS, 1, instance_npcname("Mona's Garden Tree")+"::OnMyMobDead");
@@ -365,8 +365,8 @@ OnMyMobDead:
 1@mist,204,299,0	script	Namon's Garden Tree	4_CREEPER,{
 	callfunc("F_Mora_Mist",
 		"b27-3_bN-1",
-		"Clamoring Whisper: Brave Namon met his fate not so bravely... *giggle*",
-		"Namon");
+		_("Clamoring Whisper: Brave Namon met his fate not so bravely... *giggle*"),
+		_("Namon"));
 	end;
 OnInstanceInit:
 	monster(instance_mapname("1@mist"), 89, 173, _("Brave Namon"), PARUS, 1, instance_npcname("Namon's Garden Tree")+"::OnMyMobDead");
@@ -382,8 +382,8 @@ OnMyMobDead:
 1@mist,221,236,0	script	Sad Neoron's Garden Tree	4_CREEPER,{
 	callfunc("F_Mora_Mist",
 		"b6-1_b33",
-		"Lamenting Whisper: Sad Neoron has become cheerful! Spyder the Superior Spider, what are you going to do? What are you going to do now?",
-		"Neoron");
+		_("Lamenting Whisper: Sad Neoron has become cheerful! Spyder the Superior Spider, what are you going to do? What are you going to do now?"),
+		_("Neoron"));
 	end;
 OnInstanceInit:
 	monster(instance_mapname("1@mist"), 143, 265, _("Sad Neoron"), MIMING, 1, instance_npcname("Sad Neoron's Garden Tree")+"::OnMyMobDead");
@@ -399,8 +399,8 @@ OnMyMobDead:
 1@mist,206,200,0	script	Spyder's Garden Tree	4_CREEPER,{
 	callfunc("F_Mora_Mist",
 		"b5_b14",
-		"Depressed Whisper: Now it's all over with the second deepest forest. Gardeners are dying out-",
-		"Spyder");
+		_("Depressed Whisper: Now it's all over with the second deepest forest. Gardeners are dying out-"),
+		_("Spyder"));
 	end;
 OnInstanceInit:
 	monster(instance_mapname("1@mist"), 209, 200, _("Spyder the Eight-Legged"), POM_SPIDER, 1, instance_npcname("Spyder's Garden Tree")+"::OnMyMobDead");
@@ -429,8 +429,8 @@ OnMyMobDead:
 1@mist,95,287,0	script	Tito's Garden Tree	4_CREEPER,{
 	callfunc("F_Mora_Mist",
 		"c1_c13-1",
-		"Tito's Cry: *sob* *sob* Tito's gone now! Tito's done for! Boo hoo!!",
-		"Tito");
+		_("Tito's Cry: *sob* *sob* Tito's gone now! Tito's done for! Boo hoo!!"),
+		_("Tito"));
 	end;
 OnInstanceInit:
 	monster(instance_mapname("1@mist"), 264, 291, _("Tito the Flipper"), ANGRA_MANTIS, 1, instance_npcname("Tito's Garden Tree")+"::OnMyMobDead");
@@ -446,8 +446,8 @@ OnMyMobDead:
 1@mist,324,325,0	script	Pumba's Garden Tree	4_CREEPER,{
 	callfunc("F_Mora_Mist",
 		"c13-3_c4",
-		"Roaring Whisper: Tito the Hard Worker was defeated! Stop playing and go to work, Tete! Start working!",
-		"Pumba");
+		_("Roaring Whisper: Tito the Hard Worker was defeated! Stop playing and go to work, Tete! Start working!"),
+		_("Pumba"));
 	end;
 OnInstanceInit:
 	monster(instance_mapname("1@mist"), 309, 165, _("Diligent Pumba"), PARUS, 1, instance_npcname("Pumba's Garden Tree")+"::OnMyMobDead");
@@ -463,8 +463,8 @@ OnMyMobDead:
 1@mist,280,344,0	script	Tete's Garden Tree	4_CREEPER,{
 	callfunc("F_Mora_Mist",
 		"c19_c4",
-		"Whisper: They are strong, strong indeed. What are we going to do now? Are there any gardeners left? Are there any?",
-		"Tete");
+		_("Whisper: They are strong, strong indeed. What are we going to do now? Are there any gardeners left? Are there any?"),
+		_("Tete"));
 	end;
 OnInstanceInit:
 	monster(instance_mapname("1@mist"), 277, 343, _("Carefree Tete"), LITTLE_FATUM, 1, instance_npcname("Tete's Garden Tree")+"::OnMyMobDead");
@@ -476,8 +476,8 @@ OnMyMobDead:
 1@mist,345,186,0	script	The Gardeners' Tree	4_CREEPER,{
 	callfunc("F_Mora_Mist",
 		"#to_bif02",
-		"Roaring Whisper: The forest will remember you! It will remember you, the one who broke the clippers of all the gardeners!",
-		"Gardeners: We're not dead, yet!!!!", 1);
+		_("Roaring Whisper: The forest will remember you! It will remember you, the one who broke the clippers of all the gardeners!"),
+		_("Gardeners: We're not dead, yet!!!!"), 1);
 	end;
 OnInstanceInit:
 	.@map$ = instance_mapname("1@mist");
